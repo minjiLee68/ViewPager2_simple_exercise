@@ -134,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="뷰티 인사이드"
+                    android:text="기생충"
                     android:textColor="@color/primary_label"
                     android:textSize="@dimen/_12ssp"
                     android:textStyle="bold" />
@@ -143,7 +143,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_3sdp"
-                    android:text="판타지 로맨스"
+                    android:text="드라마"
                     android:textColor="@color/secondary_label"
                     android:textSize="@dimen/_11ssp" />
 
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_3sdp"
-                    android:text="2017-11-14"
+                    android:text="2019-05-30"
                     android:textColor="@color/secondary_label"
                     android:textSize="@dimen/_11ssp" />
 
@@ -205,6 +205,19 @@
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toEndOf="@id/textRecommended"
         app:layout_constraintTop_toTopOf="@id/textRecommended" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/moviesViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:paddingStart="@dimen/_50sdp"
+        android:paddingEnd="@dimen/_50sdp"
+        app:layout_constraintBottom_toTopOf="@id/textRecommended"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutSearch" />
 
     <me.ibrahimsn.lib.SmoothBottomBar
         android:id="@+id/smoothBottomBar"
